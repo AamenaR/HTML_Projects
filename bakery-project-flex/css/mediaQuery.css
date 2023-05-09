@@ -1,0 +1,13 @@
+@media(max-width:500px){
+
+    .short-add{width: 100%;}
+
+    .short-add .address{
+    width: 100%;
+    padding: 0 0 0 60px;
+    font-size: 10px;
+   }
+  
+
+   .container{width: 100%;}
+}
