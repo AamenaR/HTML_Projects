@@ -1,0 +1,259 @@
+@media (max-width: 500px) {
+
+  /* nav bar */
+  nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 70px;
+    /* margin: 0; */
+  }
+  .logo{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .logo img{
+    width: 55%;
+  }
+  
+  .icon-grid {
+    text-align: center;
+    margin-bottom: 20px;  
+  }
+
+  nav ul {
+    display: none;
+  }
+
+/* header */
+  .main-one {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .main-one .background{
+    background-attachment: local;
+  }
+
+  /* section 3 heading */
+
+  .heading{
+    text-align: center;
+  }
+  .heading h1{
+    display: inline-block;
+    font-size: 34px;
+    padding: 0%;
+
+  }
+
+  .fa-sack-dollar{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 24px;
+  }
+
+  .heading p{
+    display: block;
+  }
+
+
+  /* product card */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main{
+    width: 100%;
+  }
+
+  .img-div .buy {
+    left: 22%;
+  }
+/* .section 3*/
+
+.background-img{
+  padding: 10px;
+background-attachment: local;
+height: 620px;
+}
+
+.info-design{
+margin: 0;
+padding: 30px;
+margin-top: 100px;
+  display: block;
+  width: 100%;
+}
+
+
+.info-design .fa-magnifying-glass-location,
+.info-design .fa-house-chimney{
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 80px;
+  font-size: 50px;
+}
+
+.text .heading{
+  text-align: center;
+  top: 20%;
+  left: -5%;
+}
+.text p:nth-child(2){
+  /* text-align: justify; */
+  top: 65%;
+  left: 0%;
+  right: 0;
+  padding: 0 30px;
+}
+
+/* section 3  */
+/* icon */
+.heading .fa-house{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+/* popular proterties */
+
+.container2{
+  height: 100%;
+  padding: 20px;
+}
+
+.container2 .grid-col-row1,
+.container2 .grid-col-row2{
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+/* .grid-col-row1{
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+}  */
+
+.grid-col-row1 .upper1{
+  top: 15px;
+  left: 83%;
+  width: 14%;
+  padding: 5px 10px;
+}
+
+.grid-col-row2 .upper1{
+  width: 14%;
+} 
+
+.grid-col-row1 .upper1 i{
+  padding-right: 5px;
+}
+
+.grid-col-row1 .img-opacity1 .icon{
+  top: 60%;
+  left: 80%;
+}
+
+.grid-col-row1 .img-grid-icon .price1{
+ margin-right: 60%;
+}
+
+.grid-col-row1 .lower-info p{
+  margin-bottom: 10px;
+}
+.container2 .main-grid-card{
+  margin: 60px 10px;
+}
+
+/* popular properties end */
+
+/* Become a Real Estate Agent section start */
+
+.container3{
+  height: 100%;
+  margin-top: 40px;
+  
+}
+.grid-col{
+grid-template-columns: 1fr;
+margin: 0;
+padding: 0%;
+text-align: center;
+}
+
+.logo3{
+  padding-left: 0px;
+  margin-left: 0%;
+}
+
+.title{
+  margin: 0;
+}
+.title p{
+  display: inline-block;
+  line-height: 50px;
+  width: 60%;
+  text-align: center;
+  
+}
+/* Become a Real Estate Agent section end*/
+
+/* section 6 why choose us */
+.container4{
+  height: 100%;
+}
+
+.container4 .grid-content{
+  grid-template-columns: 1fr;
+}
+
+/* section 6 why choose us end*/
+
+/* section 7 our partners start */
+.container5 .grid-partners{
+  grid-template-columns: 1fr;
+grid-template-rows: 150px 150px 150px 150px;
+align-items: center;
+margin-left: 25%;
+}
+
+.container5 .partner-img{
+margin-left: 0;
+}
+/* section 7 our partners end */
+
+/* footer start*/
+.container6 .footer-grid{
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+
+.container6 .footer-grid input,
+.container6 .footer-grid button{
+  width: 90%;
+  text-align: center;
+}
+
+.container6 .footer-grid button{
+  margin-bottom: 20px;
+}
+
+.last-info .media{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.media-icon{
+  text-align: center;
+}
+/* footer end*/
+
+}
+

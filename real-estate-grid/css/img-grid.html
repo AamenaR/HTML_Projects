@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>img-grid</title>
+  <style>
+    .main-grid-card{
+      height: 200px;
+      width: 50%;
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .img-card{
+      height: 300px;
+      width: 100%;
+      background: url(/imgs/grid-img1.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 0px 10px ;
+
+      position: relative;
+    }
+
+    .img-opacity1{
+  background-color: rgba(27, 26, 26, 0.533);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  transition: all 0.4s ease-out;
+  z-index: 0;
+}
+
+/* hovering */
+.main-grid-card:hover .img-opacity1{
+  opacity: 1;
+}
+
+/* icons styling */
+.img-opacity1 .icon {
+  position: absolute;
+  top: 70%;
+  left: 88%;
+  display: inline;
+}
+.img-opacity1 .icon i {
+  padding-right: 4px;
+  font-size: 24px;
+}
+.upper1 {
+  position: absolute;
+  top: 15px;
+  left: 90%;
+  font-size: 15px;
+  text-align: right;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+.upper1 i {
+  padding-right: 5px;
+}
+
+    .lower-info{
+      position: absolute;
+      bottom: 0;
+    }
+
+    .lower-info p{
+      font-size: 24px;
+      font-weight: 600;
+      z-index: 1;
+    }
+
+    .img-grid-icon .set-icons{
+      font-size: 20px;
+      padding: 20px 22px;
+    }
+
+    .lower-info p{
+      margin-bottom: -2px;
+    }
+
+    .img-grid-icon del{
+      color: #a8a6a6d4;
+      font-size: 15px;
+      padding-right: 5px;
+    }
+    .img-grid-icon .price1{
+      font-size: 20px;
+      padding-right: 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-grid-card">
+
+    <div class="img-card">
+      <p class="feature">sold</p>
+
+      <!-- img hover effect -->
+      <div class="img-opacity1">
+            
+        <div class="upper1">
+          <i class="fa-solid fa-camera-retro"></i>19
+        </div>
+        
+        <div class="icon">
+          <i class="fa-solid fa-house"></i>
+        <i class="fa-regular fa-heart"></i>
+        </div>
+
+    </div>
+
+    <div class="lower-info">
+
+      <p>Modern apartment on the bay</p>
+      <div class="img-grid-icon">
+          <del>$32,000</del>
+          <span class="price1">$28,000</span> 
+        
+        <i class="set-icons fa-solid fa-bed"></i><span class="info">4beds</span>
+          <i class="set-icons fa-solid fa-bath"></i><span class="info">3baths</span>
+          <i class="set-icons fa-brands fa-squarespace"></i><span class="info">2456sqft</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

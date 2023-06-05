@@ -1,8 +1,13 @@
+:root {
+  --primary-font: "Libre Baskerville", serif;
+  --secondary-font: "Varela Round", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Varela Round", sans-serif;
+  font-family: var(--secondary-font);
   scroll-behavior: smooth;
 }
 
@@ -102,6 +107,10 @@
   color: #fff;
 
   background-color: #000;
+}
+
+.drop-down a li:not(:nth-last-child()) {
+  margin-bottom: 1rem;
 }
 
 .drop-down-menu:hover .drop-down li {
@@ -255,7 +264,9 @@ figure {
 }
 
 .zoom-img-effect img {
-  height: 600px;
+  height: 100%;
+  object-fit: cover;
+
   animation: zoom-effect 10s linear infinite;
   position: relative;
   /* opacity: .333; */
@@ -551,17 +562,24 @@ text-align: center;
   height: 60px;
   width: 60px;
   position: absolute;
+  display: block;
   padding: 12px 7px;
   color: #fff;
   top: 5%;
   left: 2%;
-  transform: rotate(-20deg);
+  /* transform: rotate(-20deg); */
   z-index: 1;
+}
+
+.price-tag p {
+  transform: rotate(-20deg) !important;
+  display: block;
 }
 
 .price-tag img::before {
   content: "10%";
   position: absolute;
+  z-index: 999;
   top: 0;
   left: 0;
 }
@@ -703,6 +721,21 @@ del {
   background-attachment: fixed;
 
   position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bg-fixed::before {
+  position: absolute;
+  content: "";
+
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.43);
 }
 
 .user-img img {
@@ -710,44 +743,34 @@ del {
   width: 120px;
   border: 2px solid #fff;
   border-radius: 50%;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 1;
+
+  z-index: 999;
+  position: relative;
 }
 
 .container-3 .centered {
-  position: absolute;
-  top: 43%;
-  left: 50%;
-
-  transform: translate(-50%);
 }
 
 .writer-role {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
-  color: #3c3c3c;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%);
+  color: white;
+  z-index: 999;
+  position: relative;
 }
 
 .review {
   font-family: "Libre Baskerville", serif;
-  width: 80%;
-  font-size: 24px;
-  line-height: 1.9em;
-  color: #3c3c3c;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  justify-content: center;
 
-  transform: translate(-50%);
+  font-size: 24px;
+  width: 70%;
+  line-height: 1.9em;
+
+  text-align: center;
+
+  position: relative;
+  color: white;
+  z-index: 99;
 }
 
 /* background-fixed section end */
@@ -1014,7 +1037,7 @@ del {
 .details-flex {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 70px 0;
 }
 
